@@ -33,6 +33,15 @@
               "zone.js/testing"
             ]
           }
+        },
+        "lint": {
+          "builder": "@angular-eslint/builder:lint",
+          "options": {
+            "lintFilePatterns": [
+              "projects/ngx-dynamic-theme/**/*.ts",
+              "projects/ngx-dynamic-theme/**/*.html"
+            ]
+          }
         }
       }
     },
@@ -130,11 +139,21 @@
             ],
             "scripts": []
           }
+        },
+        "lint": {
+          "builder": "@angular-eslint/builder:lint",
+          "options": {
+            "lintFilePatterns": [
+              "projects/ngx-dynamic-theme-demo/**/*.ts",
+              "projects/ngx-dynamic-theme-demo/**/*.html"
+            ]
+          }
         }
       }
     }
   },
   "cli": {
+    "schematicCollections": ["@angular-eslint/schematics"],
     "analytics": "cfb82178-ecf1-4063-817e-d436273239c1"
   }
 }
